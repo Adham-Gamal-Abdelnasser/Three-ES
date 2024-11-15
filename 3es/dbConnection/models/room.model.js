@@ -22,8 +22,7 @@ const schema = new mongoose.Schema(
       {
         item: {
           type: mongoose.Types.ObjectId,
-          ref: "item",  // Reference to the item (similar to product in the cart)
-          required: true
+          ref: "product",  // Reference to the item (similar to product in the cart)
         },
         quantity: {
           type: Number,
